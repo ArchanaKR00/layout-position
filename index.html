@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!-- https://tailwindcss.com/docs/position -->
+     <div class="container bg-stone-600 text-white p-10">
+    <div class="static bg-purple-600">
+      <p>Static parent</p>
+      <div class="absolute bottom-70 left-2  bg-green-600 flex items-end">
+        <p>Absolute child</p>
+      </div>
+    </div>
+  </div>
+
+
+<br>
+<div class="container bg-yellow-700 text-white p-8">
+<div class="relative bg-green-600 flex space-x-4 ">
+  <p>Relative parent</p>
+  <div class="absolute bottom-0 top-6 left-1 bg-pink-600 ">
+    <p>Absolute child</p>
+  </div>
+  </div>
+</div> <br><br>
+
+
+    <!-- https://tailwindcss.com/docs/display -->
+     <div class="container bg-stone-600 text-white p-8">
+    <p>
+      When controlling the flow of text, using the CSS property <span class="inline">display: inline</span> will cause the
+      text inside the element to wrap normally.
+    </p>
+    <p>
+      While using the property <span class="inline-block">display: inline-block</span> will wrap the element to prevent the
+      text inside from extending beyond its parent.
+    </p>
+    <p>
+      Lastly, using the property <span class="block">display: block</span> will put the element on its own line and fill its
+      parent.
+    </p>
+  </div>
+  </body>
+</html>
